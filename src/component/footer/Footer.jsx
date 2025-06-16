@@ -31,12 +31,7 @@ const Footer = () => {
                     {/* Links + Contact Info */}
                     <div className='w-full md:w-1/3 flex flex-col space-y-4'>
                         <div className="flex flex-col space-y-2 text-left">
-                            <div className='cursor-pointer' onClick={() => handleNavigate('/privacy')}>
-                                Privacy Policy
-                            </div>
-                            <div className='cursor-pointer' onClick={() => handleNavigate('/terms')}>
-                                Terms of Service
-                            </div>
+
                         </div>
                         <div className="flex flex-col space-y-2 text-left">
                             <h3 className="font-bold text-sky-900">Contact Info</h3>

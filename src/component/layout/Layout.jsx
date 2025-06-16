@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom";
 import Navbar from "../navbar/Navbar";
-import Hero from "../hero/Hero";
+import Hero from "../../pages/hero/Hero";
 import Footer from "../footer/Footer";
 
 
