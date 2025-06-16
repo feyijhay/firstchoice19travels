@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
 import logo1 from "../../asset/images/logo1.jpg";
 
 const Navbar = () => {
-    const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleAboutUsClick = () => {
-        navigate('/aboutUs');
-    };
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
