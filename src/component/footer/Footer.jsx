@@ -77,9 +77,9 @@ const Footer = () => {
                                    className="p-2 border border-gray-300 rounded"/>
                             <input type="email" name="email" placeholder="Your Email" required
                                    className="p-2 border border-gray-300 rounded"/>
-                            <textarea name="message" placeholder="Country of choice" rows="1" required
+                            <textarea name="message" placeholder="Your Message" rows="1" required
                                       className="p-2 border border-gray-300 rounded resize-none"/>
-                            <input type="date" name="preferred_dates" className="p-2 border border-gray-300 rounded"/>
+                            {/*<input type="date" name="preferred_dates" className="p-2 border border-gray-300 rounded"/>*/}
                             <button type="submit"
                                     className="bg-sky-600 text-white py-2 px-4 rounded hover:bg-sky-700 self-end">
                                 Send Message
