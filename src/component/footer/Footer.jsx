@@ -1,14 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import logo from "../../asset/images/logo1.jpg";
 import { FaWhatsapp, FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
-    const navigate = useNavigate();
 
-    const handleNavigate = (path) => {
-        navigate(path);
-    };
 
     return (
         <div className='w-full bg-white text-black py-10 px-4 md:px-20 border-t border-gray-300'>
