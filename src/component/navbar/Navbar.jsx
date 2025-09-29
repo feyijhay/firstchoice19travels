@@ -23,9 +23,12 @@ const Navbar = () => {
                 <div className="hidden md:flex items-center space-x-8">
                     <a href="#home" className="hover:text-black cursor-pointer text-black text-xl">Home</a>
                     <a href="#services" className="hover:text-black cursor-pointer text-black text-xl">Services</a>
-                    <a href="#destinations" className="hover:text-black cursor-pointer text-black text-xl">Destination</a>
-                    <a href="#testimonials" className="hover:text-black cursor-pointer text-black text-xl">Testimonial</a>
+                    <a href="#destinations"
+                       className="hover:text-black cursor-pointer text-black text-xl">Destination</a>
+                    <a href="#testimonials"
+                       className="hover:text-black cursor-pointer text-black text-xl">Testimonial</a>
                     <a href="#about" className="hover:text-black cursor-pointer text-black text-xl">About Us</a>
+                    <a href="#book-flights" className="hover:text-black cursor-pointer text-black text-xl">Book Flights</a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -42,11 +45,18 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {menuOpen && (
                 <div className="md:hidden flex flex-col items-center space-y-4 py-4 bg-white">
-                    <a href="#home" className="hover:text-black cursor-pointer text-black text-xl" onClick={toggleMenu}>Home</a>
-                    <a href="#services" className="hover:text-black cursor-pointer text-black text-xl" onClick={toggleMenu}>Services</a>
-                    <a href="#destinations" className="hover:text-black cursor-pointer text-black text-xl" onClick={toggleMenu}>Destination</a>
-                    <a href="#testimonials" className="hover:text-black cursor-pointer text-black text-xl" onClick={toggleMenu}>Testimonial</a>
-                    <a href="#about" className="hover:text-black cursor-pointer text-black text-xl" onClick={toggleMenu}>About Us</a>
+                    <a href="#home" className="hover:text-black cursor-pointer text-black text-xl"
+                       onClick={toggleMenu}>Home</a>
+                    <a href="#services" className="hover:text-black cursor-pointer text-black text-xl"
+                       onClick={toggleMenu}>Services</a>
+                    <a href="#destinations" className="hover:text-black cursor-pointer text-black text-xl"
+                       onClick={toggleMenu}>Destination</a>
+                    <a href="#testimonials" className="hover:text-black cursor-pointer text-black text-xl"
+                       onClick={toggleMenu}>Testimonial</a>
+                    <a href="#about" className="hover:text-black cursor-pointer text-black text-xl"
+                       onClick={toggleMenu}>About Us</a>
+                    <a href="#book-flights" className="hover:text-black cursor-pointer text-black text-xl"
+                       onClick={toggleMenu}>Book Flights</a>
                 </div>
             )}
         </nav>
