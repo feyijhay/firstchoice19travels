@@ -58,7 +58,7 @@ const Footer = () => {
                         <div className="flex items-start space-x-2">
                             <FaMapMarkerAlt className="text-red-500 w-5 h-5 mt-1"/>
                             <p className="text-sm">
-                                Shop 8, Jesus Plaza, Boys Town Bus Stop,<br/> Ipaja, Lagos.
+                                Shop 8, Jesus Plaza, Boys Town Bus Stop,<br/> Ipaja, Lagos.npm
                             </p>
                         </div>
                     </div>

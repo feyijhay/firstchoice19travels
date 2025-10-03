@@ -90,6 +90,24 @@ const Hero = () => {
                 </div>
             </section>
 
+            {/* 🔹 Flight Booking Section */}
+            <section id="book-flights" className="py-20 bg-sky-50">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-sky-800 text-center mb-12">Book Your Flight With Us</h2>
+                    <div className="flex justify-center">
+                        <iframe
+                            id="Subscription"
+                            style={{width: "100%", height: "500px", overflow: "hidden"}}
+                            frameBorder={0}
+                            src="https://firstchoice19travels.myreservationagent.com/widget"
+                            scrolling="yes"
+                            allow="popup"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
             {/* Services */}
             <section id="services" className="py-20 bg-sky-50">
                 <div className="container mx-auto px-4">
@@ -267,23 +285,7 @@ const Hero = () => {
                 </div>
             </section>
 
-            {/* 🔹 Flight Booking Section */}
-            <section id="book-flights" className="py-20 bg-sky-50">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-sky-800 text-center mb-12">Book Your Flight With Us</h2>
-                    <div className="flex justify-center">
-                        <iframe
-                            id="Subscription"
-                            style={{width: "100%", height: "500px", overflow: "hidden"}}
-                            frameBorder={0}
-                            src="https://firstchoice19travels.myreservationagent.com/widget"
-                            scrolling="yes"
-                            allow="popup"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-                </div>
-            </section>
+
         </>
     );
 };
