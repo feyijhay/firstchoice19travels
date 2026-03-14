@@ -1,0 +1,308 @@
+.hero {
+  position: relative;
+  height: calc(100vh - 82px);
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.cta-section {
+  margin-top: 1.5rem;
+}
+
+.plan-trip-btn {
+  display: inline-block;
+  background-color: #4A9FD1;
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.plan-trip-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background-color: #3B8BC0;
+}
+
+.booking-section {
+  padding: 1.5rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.booking-widget {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.booking-widget iframe {
+  display: block;
+  border: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-section {
+  padding: 3rem 2rem;
+  background-color: #eaf6fd;
+}
+
+.services-title {
+  text-align: center;
+  color: #4A9FD1;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(74, 159, 209, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  border: 1px solid #e8f4fd;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(74, 159, 209, 0.2);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #4A9FD1;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.service-card h3 {
+  color: #000000;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.service-card p {
+  color: #222222;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.packages-section {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.packages-title {
+  text-align: center;
+  color: #4A9FD1;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scroll 25s linear infinite;
+  width: max-content;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 350px;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.carousel-slide:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.testimonials-section {
+  padding: 2.5rem 2rem;
+  background-color: #eaf6fd;
+  text-align: center;
+}
+
+.testimonials-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonials-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #4A9FD1;
+  margin-bottom: 0.8rem;
+}
+
+.stars {
+  color: #f5a623;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 3px;
+}
+
+.testimonial-text {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #444444;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+  min-height: 60px;
+}
+
+.testimonial-author {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4A9FD1;
+  margin-bottom: 1rem;
+}
+
+.testimonial-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.nav-arrow {
+  background: none;
+  border: 2px solid #4A9FD1;
+  color: #4A9FD1;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.nav-arrow:hover {
+  background-color: #4A9FD1;
+  color: #ffffff;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgba(74, 159, 209, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #4A9FD1;
+}
+
+@media (max-width: 1024px) {
+  .hero-content h1 { font-size: 2.5rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .hero { height: auto; min-height: calc(100vh - 70px); }
+  .hero-content h1 { font-size: 1.6rem; }
+  .hero-content { padding: 3rem 1rem; }
+  .plan-trip-btn { padding: 0.7rem 1.5rem; font-size: 0.95rem; }
+  .booking-section { padding: 1rem; }
+  .booking-widget { padding: 0; }
+  .services-section { padding: 2rem 1rem; }
+  .services-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+  .services-title, .packages-title { font-size: 1.3rem; }
+  .packages-section { padding: 2rem 1rem; }
+  .carousel-slide { width: 220px; height: 160px; }
+  .testimonials-section { padding: 2rem 1rem; }
+  .testimonials-title { font-size: 1.3rem; }
+  .testimonial-text { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 1.3rem; }
+  .carousel-slide { width: 180px; height: 130px; }
+}

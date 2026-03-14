@@ -1,0 +1,22 @@
+.flights {
+  min-height: 80vh;
+}
+
+.booking-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.booking-container iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .booking-container { padding: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .booking-container { padding: 0.5rem; }
+}

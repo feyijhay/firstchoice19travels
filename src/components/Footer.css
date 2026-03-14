@@ -1,0 +1,128 @@
+.footer {
+  background-color: #ffffff;
+  color: var(--text-dark);
+  margin-top: auto;
+  padding: 3rem 0 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* First column: logo image + company name side by side, tagline below company name */
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-logo img {
+  height: 36px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.footer-logo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4A9FD1;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-tagline {
+  color: #666666;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 0.3rem;
+}
+
+/* Headings in columns 2 & 3 — must match the visual top of .footer-logo-text */
+.footer-section h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4A9FD1;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.footer-section a {
+  color: var(--text-dark);
+  text-decoration: none;
+  line-height: 2;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.footer-section a:hover {
+  color: #4A9FD1;
+}
+
+.footer-section p {
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  font-size: 1.3rem;
+  color: #4A9FD1;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  color: #3B8BC0;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .footer-container { padding: 0 1rem; }
+  .footer-logo img { height: 28px; }
+  .footer-logo-text { font-size: 0.95rem; }
+  .footer-section h3 { font-size: 0.95rem; }
+  .footer { padding: 2rem 0 1rem; }
+}
