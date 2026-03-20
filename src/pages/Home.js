@@ -3,12 +3,12 @@ import './Home.css';
 
 const testimonials = [
   {
-    text: '"Firstchoice19travels planned the perfect honeymoon for us! Everything was seamless, and we had the trip of a lifetime."',
+    text: '"FirstChoice19Travels planned the perfect honeymoon for us! Everything was seamless, and we had the trip of a lifetime."',
     author: '— Mr. Ayo',
     stars: 5
   },
   {
-    text: '"I highly recommend Firstchoice19travels. Their expertise and attention to detail made our family vacation unforgettable."',
+    text: '"I highly recommend FirstChoice19Travels. Their expertise and attention to detail made our family vacation unforgettable."',
     author: '— Ms. Glory',
     stars: 5
   },
@@ -36,6 +36,7 @@ const testimonials = [
 
 function Home() {
   const [current, setCurrent] = useState(0);
+  const [lightbox, setLightbox] = useState(null);
   const trackRef = useRef(null);
   const dragStart = useRef(null);
   const dragOffset = useRef(0);
@@ -154,23 +155,30 @@ function Home() {
             onTouchStart={onDragStart} onTouchEnd={onDragEnd}
           >
             <div className="carousel-track" ref={trackRef}>
-              <div className="carousel-slide"><img src="/easter zanzibar.jpeg" alt="Easter Zanzibar" /></div>
-              <div className="carousel-slide"><img src="/summer zanzibar.jpeg" alt="Summer Zanzibar" /></div>
-              <div className="carousel-slide"><img src="/visa.PNG" alt="Visa" /></div>
-              <div className="carousel-slide"><img src="/desinations.PNG" alt="Destinations" /></div>
-              <div className="carousel-slide"><img src="/passport.jpeg" alt="Passport" /></div>
-              <div className="carousel-slide"><img src="/locations.jpeg" alt="Locations" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/easter zanzibar.jpeg')}><img src="/easter zanzibar.jpeg" alt="Easter Zanzibar" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/summer zanzibar.jpeg')}><img src="/summer zanzibar.jpeg" alt="Summer Zanzibar" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/visa.PNG')}><img src="/visa.PNG" alt="Visa" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/desinations.PNG')}><img src="/desinations.PNG" alt="Destinations" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/passport.jpeg')}><img src="/passport.jpeg" alt="Passport" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/locations.jpeg')}><img src="/locations.jpeg" alt="Locations" /></div>
               {/* Duplicates for seamless loop */}
-              <div className="carousel-slide"><img src="/easter zanzibar.jpeg" alt="Easter Zanzibar" /></div>
-              <div className="carousel-slide"><img src="/summer zanzibar.jpeg" alt="Summer Zanzibar" /></div>
-              <div className="carousel-slide"><img src="/visa.PNG" alt="Visa" /></div>
-              <div className="carousel-slide"><img src="/desinations.PNG" alt="Destinations" /></div>
-              <div className="carousel-slide"><img src="/passport.jpeg" alt="Passport" /></div>
-              <div className="carousel-slide"><img src="/locations.jpeg" alt="Locations" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/easter zanzibar.jpeg')}><img src="/easter zanzibar.jpeg" alt="Easter Zanzibar" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/summer zanzibar.jpeg')}><img src="/summer zanzibar.jpeg" alt="Summer Zanzibar" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/visa.PNG')}><img src="/visa.PNG" alt="Visa" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/desinations.PNG')}><img src="/desinations.PNG" alt="Destinations" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/passport.jpeg')}><img src="/passport.jpeg" alt="Passport" /></div>
+              <div className="carousel-slide" onClick={() => setLightbox('/locations.jpeg')}><img src="/locations.jpeg" alt="Locations" /></div>
             </div>
           </div>
         </div>
       </section>
+
+      {lightbox && (
+        <div className="lightbox-overlay" onClick={() => setLightbox(null)}>
+          <button className="lightbox-close" onClick={() => setLightbox(null)}>&times;</button>
+          <img src={lightbox} alt="Full view" className="lightbox-img" />
+        </div>
+      )}
 
       <section className="testimonials-section">
         <div className="testimonials-inner">

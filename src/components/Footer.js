@@ -9,9 +9,9 @@ function Footer() {
           {/* Column 1: logo + company name + tagline */}
           <div className="footer-section">
             <div className="footer-logo">
-              <img src="/logo.jpg" alt="FirstChoice19travels" />
+              <img src="/logo.jpg" alt="FirstChoice19Travels" />
               <div className="footer-logo-info">
-                <span className="footer-logo-text">FirstChoice19travels</span>
+                <span className="footer-logo-text">FirstChoice19Travels</span>
                 <span className="footer-tagline">Journey On, Make Memories.</span>
               </div>
             </div>
@@ -24,10 +24,10 @@ function Footer() {
             <a href="tel:+2347036323199">070 3632 3199</a>
             <a href="mailto:firstchoice19travels@gmail.com">firstchoice19travels@gmail.com</a> */}
             <div className="social-icons">
-              <a href="https://instagram.com/Firstchoice19travels" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
+              <a href="https://instagram.com/FirstChoice19Travels" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://tiktok.com/@Firstchoice19_travels" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="TikTok">
+              <a href="https://tiktok.com/@FirstChoice19_Travels" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="TikTok">
                 <i className="fab fa-tiktok"></i>
               </a>
               <a href="https://wa.me/2349081601321" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="WhatsApp">
@@ -47,7 +47,7 @@ function Footer() {
 
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2026 FirstChoice19travels. All rights reserved.</p>
+          <p>&copy; 2026 FirstChoice19Travels. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -30,8 +30,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={handleHome}>
-          <img src="/logo.jpg" alt="FirstChoice19travels" className="logo-img" />
-          FirstChoice19travels
+          <img src="/logo.jpg" alt="FirstChoice19Travels" className="logo-img" />
+          FirstChoice19Travels
         </Link>
 
         <button className="hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Toggle menu">
